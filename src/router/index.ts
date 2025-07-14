@@ -10,79 +10,86 @@ import IntegratedOperations from '../views/IntegratedOperations.vue'
 import CommentGeneration from '../views/CommentGeneration.vue'
 import TweetGeneration from '../views/TweetGeneration.vue'
 import ContentEvaluation from '../views/ContentEvaluation.vue'
+import ContentEvaluationSystem from '../views/ContentEvaluationSystem.vue'
 
 const routes: RouteRecordRaw[] = [
   {
-    path: '/',
-    redirect: '/dashboard'
+    path: "/",
+    redirect: "/dashboard",
   },
   {
-    path: '/login',
-    name: 'Login',
+    path: "/login",
+    name: "Login",
     component: Login,
-    meta: { requiresAuth: false }
+    meta: { requiresAuth: false },
   },
   {
-    path: '/dashboard',
-    name: 'Dashboard',
+    path: "/dashboard",
+    name: "Dashboard",
     component: Dashboard,
-    meta: { requiresAuth: true }
+    meta: { requiresAuth: true },
   },
   {
-    path: '/accounts',
-    name: 'Accounts',
+    path: "/accounts",
+    name: "Accounts",
     component: Accounts,
-    meta: { requiresAuth: true }
+    meta: { requiresAuth: true },
   },
   {
-    path: '/tweets',
-    name: 'Tweets',
+    path: "/tweets",
+    name: "Tweets",
     component: Tweets,
-    meta: { requiresAuth: true }
+    meta: { requiresAuth: true },
   },
   {
-    path: '/automation',
-    name: 'Automation',
+    path: "/automation",
+    name: "Automation",
     component: Automation,
-    meta: { requiresAuth: true }
+    meta: { requiresAuth: true },
   },
   {
-    path: '/analytics',
-    name: 'Analytics',
+    path: "/analytics",
+    name: "Analytics",
     component: Analytics,
-    meta: { requiresAuth: true }
+    meta: { requiresAuth: true },
   },
   // 新增的四个页面路由
   {
-    path: '/integrated-operations',
-    name: 'IntegratedOperations',
+    path: "/integrated-operations",
+    name: "IntegratedOperations",
     component: IntegratedOperations,
-    meta: { requiresAuth: true }
+    meta: { requiresAuth: true },
   },
   {
-    path: '/comment-generation',
-    name: 'CommentGeneration',
+    path: "/comment-generation",
+    name: "CommentGeneration",
     component: CommentGeneration,
-    meta: { requiresAuth: true }
+    meta: { requiresAuth: true },
   },
   {
-    path: '/tweet-generation',
-    name: 'TweetGeneration',
+    path: "/tweet-generation",
+    name: "TweetGeneration",
     component: TweetGeneration,
-    meta: { requiresAuth: true }
+    meta: { requiresAuth: true },
   },
   {
-    path: '/content-evaluation',
-    name: 'ContentEvaluation',
+    path: "/content-evaluation",
+    name: "ContentEvaluation",
     component: ContentEvaluation,
-    meta: { requiresAuth: true }
+    meta: { requiresAuth: true },
   },
   {
-    path: '/settings',
-    name: 'Settings',
+    path: "/settings",
+    name: "Settings",
     component: Settings,
-    meta: { requiresAuth: true }
-  }
-]
+    meta: { requiresAuth: true },
+  },
+  {
+    path: "/ContentEvaluationSystem",
+    name: "ContentEvaluationSystem",
+    component: ContentEvaluationSystem,
+    meta:{ requiresAuth: true },
+  },
+];
 
 export default routes
